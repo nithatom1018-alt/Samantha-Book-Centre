@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samantha Book and Novel Centre</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#eef7ff,#f8fbff,#ffffff);
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#0c3b73;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#fff;
+}
+
+nav a{
+text-decoration:none;
+color:#fff;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+.hero{
+padding:140px 8% 80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+min-height:100vh;
+background:linear-gradient(rgba(12,59,115,.85),rgba(12,59,115,.85)),
+url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1500&q=80");
+background-size:cover;
+background-position:center;
+color:#fff;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1{
+font-size:52px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FFD700;
+color:#000;
+text-decoration:none;
+font-weight:600;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#fff;
+transform:translateY(-3px);
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+color:#0c3b73;
+margin-bottom:45px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#0c3b73;
+margin-bottom:15px;
+}
+
+.offer{
+background:linear-gradient(135deg,#FFD700,#ff9800);
+text-align:center;
+color:#000;
+border-radius:20px;
+padding:60px 30px;
+}
+
+.offer h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.offer p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.review-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.review{
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.review h4{
+color:#0c3b73;
+margin-bottom:10px;
+}
+
+iframe{
+width:100%;
+height:420px;
+border:none;
+border-radius:15px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+input,textarea{
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+button{
+padding:15px;
+border:none;
+background:#0c3b73;
+color:#fff;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#FFD700;
+color:#000;
+}
+
+footer{
+background:#0c3b73;
+padding:30px;
+text-align:center;
+color:#fff;
+margin-top:40px;
+}
+
+.phone{
+font-size:24px;
+font-weight:700;
+color:#FFD700;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+📚 Samantha Book & Novel Centre
+</div>
+
+<nav>
+<a href="#subject">Subject Books</a>
+<a href="#novel">Novels</a>
+<a href="#offer">Offer</a>
+<a href="#gallery">Gallery</a>
+<a href="#review">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Your Trusted Book Store in Vannarapettai, Tirunelveli</h1>
+
+<p>
+Discover the best collection of Subject Books, NCERT, Jeevith, MCC Guide,
+Allen Publications and an exciting collection of Crime, History,
+Comedy-Drama and many more novels.
+</p>
+
+<a href="tel:+919876543210" class="btn">
+📞 Call Now
+</a>
+
+</div>
+
+</section>
+
+
+<section id="subject">
+
+<h2 class="section-title">
+Subject Books
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>NCERT Books</h3>
+<p>Complete school textbooks for all standards.</p>
+</div>
+
+<div class="card">
+<h3>Jeevith Publications</h3>
+<p>Quality educational books for competitive learning.</p>
+</div>
+
+<div class="card">
+<h3>MCC Guide</h3>
+<p>Exam preparation guides and reference materials.</p>
+</div>
+
+<div class="card">
+<h3>Allen Study Materials</h3>
+<p>Popular coaching books for NEET & JEE preparation.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="novel">
+
+<h2 class="section-title">
+Novel Collection
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Crime Novels</h3>
+<p>Thrilling mystery and detective stories.</p>
+</div>
+
+<div class="card">
+<h3>History</h3>
+<p>Historical fiction and world history collections.</p>
+</div>
+
+<div class="card">
+<h3>Comedy & Drama</h3>
+<p>Enjoy entertaining and emotional storytelling.</p>
+</div>
+
+<div class="card">
+<h3>More Collections</h3>
+<p>Romance, Adventure, Fantasy, Biography and much more.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="offer">
+
+<div class="offer">
+
+<h2>🎉 Daily Offer</h2>
+
+<p>
+Special discounts on selected Subject Books and Novels every day.
+Visit our shop to discover today's exclusive offers.
+</p>
+
+<a href="tel:+919876543210" class="btn">
+Call for Today's Offer
+</a>
+
+</div>
+
+</section>
+
+
+<section id="gallery">
+
+<h2 class="section-title">
+Photo Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+
+<section id="review">
+
+<h2 class="section-title">
+Customer Reviews
+</h2>
+
+<div class="review-box">
+
+<div class="review">
+<h4>★★★★★</h4>
+<p>
+Excellent collection of school books and competitive exam guides.
+Very friendly service.
+</p>
+</div>
+
+<div class="review">
+<h4>★★★★★</h4>
+<p>
+Great place for novel lovers.
+Affordable prices with new arrivals every week.
+</p>
+</div>
+
+<div class="review">
+<h4>★★★★★</h4>
+<p>
+One-stop destination for students in Tirunelveli.
+Highly recommended.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="section-title">
+Our Location
+</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Vannarapettai%20Tirunelveli&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Samantha Book & Novel Centre</h3>
+
+<p><strong>📍 Near Vannarapettai, Tirunelveli</strong></p>
+
+<br>
+
+<p class="phone">
+📞 +91 98765 43210
+</p>
+
+<br>
+
+<p>
+Serving students, families and readers with quality books at affordable prices.
+</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Samantha Book & Novel Centre</h3>
+
+<p>Your Trusted Book Store in Tirunelveli</p>
+
+<p style="margin-top:15px;">
+📞 +91 98765 43210
+</p>
+
+</footer>
+
+</body>
+</html>
